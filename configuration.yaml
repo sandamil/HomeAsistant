@@ -1,0 +1,76 @@
+# Carga por defecto de integraciones recomendadas
+default_config:
+
+# Configuración HTTP (proxy inverso, IPs confiables, login)
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.30.33.0/24
+  login_attempts_threshold: 10
+
+# Temas del frontend
+frontend:
+  themes: !include_dir_merge_named themes
+  extra_module_url:
+    - /homeassistant/www/community/lovelace-card-mod/card-mod.js
+
+# Automatizaciones, scripts, escenas
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+# Sensores personalizados
+sensor: !include sensors.yaml
+
+# Serial para Zigbee o integración TCP
+serial:
+  port: 'tcp://192.168.1.136:6638'
+  adapter: ezsp  # También puedes probar con 'zstack' o 'deconz'
+
+# Histórico (incluir solo lo relevante)
+history:
+  include:
+    entities:
+      - sensor.consumo_bateria_xc40
+      - sensor.coste_bateria_xc40
+      - sensor.consumo_diesel_v90
+      - sensor.coste_combustible_v90
+      - sensor.consumo_bateria_xc40_dia
+      - sensor.consumo_bateria_xc40_mes
+      - sensor.consumo_diesel_v90_dia
+      - sensor.consumo_diesel_v90_mes
+      - sensor.coste_combustible_v90_dia
+      - sensor.coste_combustible_v90_mes
+      - sensor.consumo_bateria_xc40_total
+    domains:
+      - device_tracker
+
+# Entradas numéricas (incluidas desde archivo separado)
+input_number: !include input_number.yaml
+
+# Selector tipo desplegable (por ejemplo, para elegir duración de riego)
+input_select:
+  duracion_riego:
+    name: Duración del riego
+    options:
+      - "30"
+      - "60"
+      - "120"
+      - "300"
+    initial: "60"
+    icon: mdi:timer
+
+# Comandos REST (para SmartRiego)
+rest_command: !include rest_command.yaml
+
+# Notificaciones por Telegram
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_bot_token
+    allowed_chat_ids:
+      - !secret telegram_chat_id
+
+notify:
+  - name: telegram
+    platform: telegram
+    chat_id: !secret telegram_chat_id

@@ -1,0 +1,76 @@
+# Entradas numéricas para SmartRiego
+tiempo_riego:
+  name: Tiempo de riego
+  initial: 30
+  min: 10
+  max: 900
+  step: 10
+  unit_of_measurement: s
+
+# Entradas numéricas de consumo para el XC40
+consumo_bateria_xc40_dia:
+  name: Consumo Diario Batería XC40
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "kWh"
+
+consumo_bateria_xc40_mes:
+  name: Consumo Mensual Batería XC40
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "kWh"
+
+coste_bateria_xc40:
+  name: Coste Batería XC40
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "€"
+
+# Entradas numéricas de consumo para el V90
+consumo_diesel_v90_dia:
+  name: Consumo Diario Diesel V90
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "L"
+
+consumo_diesel_v90_mes:
+  name: Consumo Mensual Diesel V90
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "L"
+
+coste_combustible_v90:
+  name: Coste Diesel V90
+  initial: 0
+  min: 0
+  max: 100
+  step: 0.1
+  unit_of_measurement: "€"
+
+tiempo_riego_minutos:
+  name: Minutos
+  initial: 0
+  min: 0
+  max: 59
+  step: 1
+  unit_of_measurement: min
+  mode: box
+
+tiempo_riego_segundos:
+  name: Segundos
+  initial: 0
+  min: 0
+  max: 59
+  step: 1
+  unit_of_measurement: s
+  mode: box

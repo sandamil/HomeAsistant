@@ -1,0 +1,55 @@
+riego_zona1_duracion:
+  alias: "Riego zona 1 con duración"
+  sequence:
+    - service: rest_command.riego_zona1_dinamico
+      data:
+        tiempo: "{{ states('sensor.tiempo_riego_total') | int(0) }}"
+  mode: single
+
+riego_zona2_duracion:
+  alias: "Riego zona 2 con duración"
+  sequence:
+    - service: rest_command.riego_zona2_dinamico
+      data:
+        tiempo: "{{ states('sensor.tiempo_riego_total') | int(0) }}"
+  mode: single
+
+programar_riego_zona_1:
+  alias: "Programar riego zona 1"
+  sequence:
+    - service: rest_command.riego_zona1_dinamico
+      data:
+        tiempo: "{{ states('sensor.tiempo_riego_total') | int(0) }}"
+  mode: single
+
+riego_zona1_notificado:
+  alias: "Riego zona 1 con notificación"
+  sequence:
+    - service: rest_command.riego_zona1_dinamico
+      data:
+        tiempo: "{{ states('sensor.tiempo_riego_total') | int(0) }}"
+    - service: notify.telegram
+      data:
+        message: >
+          🌱 Riego zona 1 iniciado durante {{ states('sensor.tiempo_riego_total') | int(0) }} segundos.
+    - service: system_log.write
+      data:
+        message: "Riego zona 1 iniciado con duración: {{ states('sensor.tiempo_riego_total') | int(0) }} segundos"
+        level: info
+  mode: single
+
+riego_zona2_notificado:
+  alias: "Riego zona 2 con notificación"
+  sequence:
+    - service: rest_command.riego_zona2_dinamico
+      data:
+        tiempo: "{{ states('sensor.tiempo_riego_total') | int(0) }}"
+    - service: notify.telegram
+      data:
+        message: >
+          🌿 Riego zona 2 iniciado durante {{ states('sensor.tiempo_riego_total') | int(0) }} segundos.
+    - service: system_log.write
+      data:
+        message: "Riego zona 2 iniciado con duración: {{ states('sensor.tiempo_riego_total') | int(0) }} segundos"
+        level: info
+  mode: single

@@ -1,0 +1,33 @@
+- platform: template
+  sensors:
+    tiempo_riego_total:
+      friendly_name: "Tiempo de riego total"
+      unit_of_measurement: "s"
+      value_template: >-
+        {% set min = states('input_number.tiempo_riego_minutos') | int(0) %}
+        {% set seg = states('input_number.tiempo_riego_segundos') | int(0) %}
+        {{ min * 60 + seg }}
+
+    tiempo_riego_formateado:
+      friendly_name: "Tiempo de riego formateado"
+      value_template: >-
+        {% set t = states('sensor.tiempo_riego_total') | int(0) %}
+        {% if t < 60 %}
+          {{ t }} segundos
+        {% elif t % 60 == 0 %}
+          {{ (t / 60) | int }} minutos
+        {% else %}
+          {{ (t // 60) | int }} min {{ t % 60 }} s
+        {% endif %}
+
+    tiempo_riego_total_formateado:
+      friendly_name: "Tiempo de riego total formateado"
+      value_template: >-
+        {% set total = states('sensor.tiempo_riego_total') | int(0) %}
+        {% if total < 60 %}
+          {{ total }} segundos
+        {% elif total % 60 == 0 %}
+          {{ (total / 60) | int }} minutos
+        {% else %}
+          {{ (total // 60) | int }} min {{ total % 60 }} s
+        {% endif %}

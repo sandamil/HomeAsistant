@@ -1,0 +1,2160 @@
+2025-07-06 09:51:50.816 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration localtuya which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.822 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration volvo_cars which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.827 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration dreame_vacuum which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.831 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration solarman which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.835 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.839 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration alexa_media which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.841 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:51:50.845 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2025-07-06 09:52:07.737 ERROR (MainThread) [homeassistant.config] Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 21: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 22: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 28: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 29: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 50: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 51: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 66: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 67: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 8: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_price_per_kilometer->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+2025-07-06 09:52:08.811 WARNING (MainThread) [homeassistant.helpers.config_validation] The 'include' option near /config/configuration.yaml:32 is deprecated, please remove it from your configuration
+2025-07-06 09:52:13.593 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/pysiaalarm/data/data.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+
+2025-07-06 09:52:31.233 ERROR (MainThread) [homeassistant.setup] The 'serial' integration does not support YAML setup, please remove it from your configuration
+2025-07-06 09:52:31.235 ERROR (MainThread) [homeassistant.setup] Setup failed for 'serial': No setup or config entry setup function defined.
+2025-07-06 09:52:35.805 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/miio/miot_device.py:23: FutureWarning: functools.partial will be a method descriptor in future Python versions; wrap it in enum.member() if you want to preserve the old behavior
+  Bool = partial(_str2bool)
+
+2025-07-06 09:52:37.255 WARNING (SyncWorker_0) [homeassistant.components.rpi_power.binary_sensor] Under-voltage was detected. Consider getting a uninterruptible power supply for your Raspberry Pi.
+2025-07-06 09:53:20.458 WARNING (MainThread) [homeassistant.components.image] Setup of image platform volvo_cars is taking over 10 seconds.
+2025-07-06 09:53:20.459 WARNING (MainThread) [homeassistant.components.image] Setup of image platform volvo_cars is taking over 10 seconds.
+2025-07-06 09:53:20.998 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_1_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:21.023 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_2_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:21.036 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_3_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:21.050 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_4_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:21.063 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_5_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:21.075 ERROR (MainThread) [homeassistant.components.select] Error adding entity select.inverter_program_6_charging for domain select with platform solarman
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 657, in _async_add_entities
+    await self._async_add_entity(
+        entity, False, entity_registry, config_subentry_id
+    )
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 979, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1369, in add_to_platform_finish
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:23.587 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template<template=({{ (states('sensor.volvo_xc40_energy_consumption') | float * 0.075) | round(2) }}) renders=2>
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2446, in forgiving_float_filter
+    return float(value)
+ValueError: could not convert string to float: 'unknown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 641, in async_render
+    render_result = _render_with_context(self.template, compiled, **kwargs)
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2977, in _render_with_context
+    return template.render(**kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "<template>", line 1, in top-level template code
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 2449, in forgiving_float_filter
+    raise_no_default("float", value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1975, in raise_no_default
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ (states('sensor.volvo_xc40_energy_consumption') | float * 0.075) | round(2) }}' but no default was specified
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 758, in async_render_to_info
+    render_info._result = self.async_render(  # noqa: SLF001
+                          ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        variables, strict=strict, log_fn=log_fn, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 643, in async_render
+    raise TemplateError(err) from err
+homeassistant.exceptions.TemplateError: ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ (states('sensor.volvo_xc40_energy_consumption') | float * 0.075) | round(2) }}' but no default was specified
+2025-07-06 09:53:23.614 ERROR (MainThread) [homeassistant.components.template.template_entity] TemplateError('ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ (states('sensor.volvo_xc40_energy_consumption') | float * 0.075) | round(2) }}' but no default was specified') while processing template 'Template<template=({{ (states('sensor.volvo_xc40_energy_consumption') | float * 0.075) | round(2) }}) renders=4>' for attribute '_attr_native_value' in entity 'sensor.coste_diario_recarga_xc40'
+2025-07-06 09:53:25.797 WARNING (MainThread) [custom_components.hacs] You have 'custom-cards/bar-card' installed with HACS this repository has been removed from HACS, please consider removing it. Removal reason (Repository is no longer maintained)
+2025-07-06 09:53:32.515 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:33.095 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/ProtocolMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.108 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/AudioFadeMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.115 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/PlayerPath.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.122 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/Origin.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.135 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/DeviceInfoMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.157 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/Common.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.174 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/NowPlayingClient.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.179 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/NowPlayingPlayer.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.197 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/AudioFadeResponseMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.203 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/ClientUpdatesConfigMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.218 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/ConfigureConnectionMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.229 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/CryptoPairingMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.249 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/GenericMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.265 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/GetKeyboardSessionMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.275 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/GetRemoteTextInputSessionMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.290 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/GetVolumeMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.305 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/GetVolumeResultMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.318 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/KeyboardMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.334 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/ModifyOutputContextRequestMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:33.345 WARNING (ImportExecutor_0) [py.warnings] /usr/local/lib/python3.13/site-packages/google/protobuf/runtime_version.py:98: UserWarning: Protobuf gencode version 5.28.1 is exactly one major version older than the runtime version 6.31.1 at pyatv/protocols/mrp/protobuf/NotificationMessage.proto. Please update the gencode to avoid compatibility violations in the next runtime release.
+  warnings.warn(
+
+2025-07-06 09:53:37.662 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:42.614 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:53:57.560 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:12.494 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:17.707 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:22.627 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:37.523 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:53.795 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:54:58.668 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:03.833 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:17.597 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:33.470 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:38.657 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:43.643 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:55:57.527 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:56:12.472 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:56:17.727 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:56:38.141 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:56:52.532 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:56:57.647 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:02.662 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:18.786 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:27.352 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.148 (192.168.1.148). Requested URL: '/auth/login_flow/87cd8cb0be4c374174145d6c7b65b3ac'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0)
+2025-07-06 09:57:32.610 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:38.949 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:41.614 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.148 (192.168.1.148). Requested URL: '/auth/login_flow/87cd8cb0be4c374174145d6c7b65b3ac'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0)
+2025-07-06 09:57:43.663 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:57:51.759 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.1.148 (192.168.1.148). Requested URL: '/auth/login_flow/87cd8cb0be4c374174145d6c7b65b3ac'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:140.0) Gecko/20100101 Firefox/140.0)
+2025-07-06 09:58:12.277 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:58:17.685 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:58:22.624 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:58:36.560 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:58:52.798 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:58:57.668 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:02.648 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:16.537 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:32.167 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:37.772 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:42.628 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 09:59:56.538 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:11.508 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:16.682 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:21.624 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:36.566 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:51.497 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:56.757 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:00:57.691 ERROR (MainThread) [homeassistant.config] Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 21: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 22: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 28: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 29: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 50: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 51: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 66: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 67: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 8: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_price_per_kilometer->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+2025-07-06 10:01:01.624 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:01:16.526 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:01:31.496 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:01:36.798 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:01:41.619 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:01:56.624 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:11.500 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:16.661 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:21.610 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:36.579 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:52.804 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:02:57.688 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:03:02.624 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:03:16.541 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:03:31.496 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 270, in _handle_refresh_interval
+    await self._async_refresh(log_failures=True, scheduled=True)
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 481, in _async_refresh
+    self.async_update_listeners()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 180, in async_update_listeners
+    update_callback()
+    ~~~~~~~~~~~~~~~^^
+  File "/config/custom_components/solarman/entity.py", line 70, in _handle_coordinator_update
+    self.async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1018, in async_write_ha_state
+    self._async_write_ha_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1140, in _async_write_ha_state
+    self.__async_calculate_state()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1080, in __async_calculate_state
+    state = self._stringify_state(available)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 1024, in _stringify_state
+    if (state := self.state) is None:
+                 ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/select/__init__.py", line 145, in state
+    current_option = self.current_option
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/config/custom_components/solarman/select.py", line 55, in current_option
+    return self._attr_state if not self.mask else lookup_value(self._attr_value & self.mask, self.dictionary)
+                                                               ~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+2025-07-06 10:06:01.770 ERROR (MainThread) [custom_components.solarman.coordinator] Timeout fetching Inverter data
+2025-07-06 10:06:39.141 ERROR (MainThread) [homeassistant.config] Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 21: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 22: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_cost_per_kilometer_since_last_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 28: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 29: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_costs_since_battery_charge->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 50: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 51: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_latest_trip_cost_per_km->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 66: 'icon' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->icon, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 67: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_fuel_consumption->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+Invalid config for 'sensor' from integration 'template' at sensors.yaml, line 8: 'state_class' is an invalid option for 'template.sensor', check: sensors->volvo_overall_price_per_kilometer->state_class, please check the docs at https://www.home-assistant.io/integrations/template
+2025-07-06 10:10:12.876 WARNING (SyncWorker_3) [annotatedyaml.constructors] YAML file /config/sensors.yaml contains duplicate key "tiempo_riego_total_formateado". Check lines 174 and 187
+2025-07-06 10:10:12.908 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:32 is deprecated, please remove it from your configuration

@@ -1,0 +1,25 @@
+# Riego directo ON/OFF
+riego_zona1_on:
+  method: POST
+  url: http://192.168.1.159:5000/riego/1/on
+
+riego_zona1_off:
+  method: POST
+  url: http://192.168.1.159:5000/riego/1/off
+
+riego_zona2_on:
+  method: POST
+  url: http://192.168.1.159:5000/riego/2/on
+
+riego_zona2_off:
+  method: POST
+  url: http://192.168.1.159:5000/riego/2/off
+
+# Riego con duración (dinámico)
+riego_zona1_dinamico:
+  method: POST
+  url: "http://192.168.1.159:5000/riego/1/on/{{ tiempo }}"
+
+riego_zona2_dinamico:
+  method: POST
+  url: "http://192.168.1.159:5000/riego/2/on/{{ tiempo }}"
