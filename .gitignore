@@ -16,3 +16,4 @@ node-red/
 *.zip
 *.gz
 
+.storage/
